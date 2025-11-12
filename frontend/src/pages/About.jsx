@@ -8,7 +8,7 @@ function About() {
 
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <div className="w-98 h-98 rounded-full overflow-hidden border-4 border-indigo-100">
+                        <div className="w-88 h-88 rounded-full overflow-hidden border-4 border-indigo-100">
                             <img
                                 src="https://i.pinimg.com/736x/cf/bc/62/cfbc6290a8c664fc99290d458acc3e1c.jpg"
                                 alt="About"
@@ -35,7 +35,7 @@ function About() {
 
                         <a
                             href="#"
-                            className="CV inline-flex items-center bg-indigo-50 py-2 px-6 rounded-sm text-indigo-600 font-medium transition-colors duration-300"
+                            className="CV inline-flex items-center overflow-hidden bg-indigo-50 after:bg-indigo-600 py-3 px-6 rounded-lg text-indigo-600 hover:shadow-lg hover:shadow-indigo-600 font-medium transition-colors duration-300"
                         >
                             Unduh CV
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
