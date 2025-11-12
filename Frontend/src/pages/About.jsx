@@ -35,7 +35,7 @@ function About() {
 
                         <a
                             href="#"
-                            className="CV inline-flex items-center overflow-hidden bg-indigo-50 after:bg-indigo-600 py-3 px-6 rounded-lg text-indigo-600 hover:shadow-lg hover:shadow-indigo-600 font-medium transition-colors duration-300"
+                            className="CV inline-flex items-center overflow-hidden bg-indigo-600 after:bg-indigo-100 py-3 px-7 rounded-lg text-indigo-50 hover:shadow-lg hover:shadow-indigo-500 font-medium transition-colors duration-300"
                         >
                             Unduh CV
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -25,9 +25,9 @@ const PortfolioHome = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="hubungiSaya relative overflow-hidden border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 hover:text-white transition-colors duration-300 after:bg-indigo-600"
+                            className="hubungiSaya relative z-[2] overflow-hidden border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 hover:text-white transition-colors after:z-[0] duration-300 after:bg-indigo-600"
                         >
-                            <span className="relative z-3 ">Hubungi Saya</span>
+                            <span className="relative z-[3]">Hubungi Saya</span>
                         </a>
                     </div>
                 </div>

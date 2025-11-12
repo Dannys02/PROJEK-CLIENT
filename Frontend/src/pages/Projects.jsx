@@ -6,21 +6,21 @@ function Projects() {
             id: 1,
             title: "Aplikasi E-commerce",
             description: "Platform e-commerce dengan fitur lengkap untuk penjualan online",
-            image: "https://via.placeholder.com/400x250",
+            image: "https://i0.wp.com/gits.id/wp-content/uploads/2021/02/Hijup-scaled-1.jpg?resize=800%2C397&ssl=1",
             tags: ["React", "Node.js", "MongoDB"]
         },
         {
             id: 2,
             title: "Sistem Manajemen Konten",
             description: "CMS custom dengan antarmuka drag-and-drop yang intuitif",
-            image: "https://via.placeholder.com/400x250",
+            image: "https://www.seoptimer.com/storage/images/2024/01/5107-what%20is%20a%20cms.png",
             tags: ["Vue.js", "PHP", "MySQL"]
         },
         {
             id: 3,
             title: "Aplikasi Mobile Finansial",
             description: "Aplikasi mobile untuk manajemen keuangan pribadi",
-            image: "https://via.placeholder.com/400x250",
+            image: "https://www.zohowebstatic.com/sites/zweb/images/creator/app-deck/financial-management-software-ss2.png",
             tags: ["React Native", "Firebase", "Redux"]
         }
     ];
@@ -56,7 +56,7 @@ function Projects() {
                                 </div>
                                 <a
                                     href="#"
-                                    className="inline-flex items-center text-indigo-600 font-medium hover:text-indigo-800 transition-colors duration-300"
+                                    className="inline-flex items-center mt-2 text-indigo-50 rounded-lg py-3 px-6 bg-indigo-600 font-medium hover:bg-indigo-800 transition-colors duration-300"
                                 >
                                     Lihat Detail
                                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

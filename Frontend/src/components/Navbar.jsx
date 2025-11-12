@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <header className="header fixed w-full shadow-sm z-50">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <header className="header fixed w-full shadow-sm px-4 z-50">
+      <div className="container mx-auto py-4 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold text-indigo-600">
           Portfolio
         </a>
@@ -14,7 +14,7 @@ function Navbar() {
             <a
               key={item}
               href={`#${item}`}
-              className="navbar-a capitalize text-black hover:text-indigo-500 transition-colors duration-300 after:bg-indigo-600"
+              className="navbar-a relative inline-block capitalize text-black hover:text-indigo-500 transition-colors duration-300 after:bg-indigo-600"
             >
               {item}
             </a>
