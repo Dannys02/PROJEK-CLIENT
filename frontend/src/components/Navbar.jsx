@@ -1,35 +1,46 @@
-// src/components/Navbar.jsx
-import { NavLink } from "react-router-dom";
+import React from "react";
 
-export default function Navbar() {
-    const linkClass = ({ isActive }) =>
-        "px-3 py-2 rounded-md text-sm font-medium " +
-        (isActive ? "bg-gray-200" : "hover:bg-gray-100");
+function Navbar() {
+  return (
+    <header className="header fixed w-full shadow-sm z-50">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="#" className="text-2xl font-bold text-indigo-600">
+          Portfolio
+        </a>
 
-    return (
-        <nav className="bg-white shadow">
-            <div className="max-w-4xl mx-auto px-4">
-                <div className="flex items-center justify-between h-14">
-                    <div className="text-lg font-semibold">Brand</div>
-                    <div className="flex space-x-2">
-                        <NavLink to="/" end className={linkClass}>
-                            Home
-                        </NavLink>
-                        <NavLink to="/about" className={linkClass}>
-                            About
-                        </NavLink>
-                        <NavLink to="/services" className={linkClass}>
-                            Services
-                        </NavLink>
-                        <NavLink to="/portfolio" className={linkClass}>
-                            Portfolio
-                        </NavLink>
-                        <NavLink to="/contact" className={linkClass}>
-                            Contact
-                        </NavLink>
-                    </div>
-                </div>
-            </div>
+        {/* Menu Desktop */}
+        <nav className="hidden md:flex space-x-8">
+          {["home", "about", "projects", "contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item}`}
+              className="navbar-a capitalize text-black hover:text-indigo-500 transition-colors duration-300 after:bg-indigo-600"
+            >
+              {item}
+            </a>
+          ))}
         </nav>
-    );
+
+        {/* Tombol menu mobile (tidak aktif untuk sekarang) */}
+        <button className="md:hidden text-gray-600 focus:outline-none">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+  );
 }
+
+export default Navbar;

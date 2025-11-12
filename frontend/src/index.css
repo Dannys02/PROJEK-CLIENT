@@ -1,0 +1,75 @@
+* {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.header {
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+.navbar-a {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+
+.navbar-a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.hubungiSaya::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+.hubungiSaya:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.CV {
+    position: relative;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.CV::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background: rgb(75, 0, 130);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s ease;
+}
+
+.CV:hover::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+
+.CV:hover {
+    box-shadow: 0 4px 10px indigo;
+    transform: translateY(-5px);
+}
