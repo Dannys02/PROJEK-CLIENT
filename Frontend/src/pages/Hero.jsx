@@ -4,7 +4,7 @@ const PortfolioHome = () => {
 
     return (
         <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-indigo-50 to-white">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
                 <div className="md:w-1/2 mb-10 md:mb-0">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                         Hi, I'm <span className="text-indigo-600">Dannys Martha F</span>
@@ -31,7 +31,8 @@ const PortfolioHome = () => {
                         </a>
                     </div>
                 </div>
-                <div className="md:w-1/2 flex justify-center">
+                <div className="relative md:w-1/2 flex justify-center items-center">
+                    <div className='absolute rounded-full border border-black'></div>
                     <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-lg shadow-black">
                         <img
                             src="https://i.pinimg.com/736x/cf/bc/62/cfbc6290a8c664fc99290d458acc3e1c.jpg"

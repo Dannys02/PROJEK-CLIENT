@@ -36,7 +36,7 @@ function Projects() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project) => (
-                        <div key={project.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div key={project.id} className="bg-white rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
                             <div className="h-48 overflow-hidden">
                                 <img
                                     src={project.image}
@@ -49,7 +49,7 @@ function Projects() {
                                 <p className="text-gray-600 mb-4">{project.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {project.tags.map((tag, index) => (
-                                        <span key={index} className="bg-indigo-100 text-indigo-700 text-sm px-3 py-1 rounded-full">
+                                        <span key={index} className="bg-indigo-100 hover:bg-indigo-200 text-indigo-700 text-sm px-3 py-1 rounded-full">
                                             {tag}
                                         </span>
                                     ))}

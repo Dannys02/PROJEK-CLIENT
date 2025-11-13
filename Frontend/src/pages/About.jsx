@@ -8,11 +8,13 @@ function About() {
 
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                        <div className="w-88 h-88 rounded-full overflow-hidden border-4 border-indigo-100">
+                        <div className="relative w-88 h-88 rounded-full overflow-hidden border-4 border-indigo-100">
+                            <div className='animation-about-vert absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-gradient-to-r from-blue-600 to-indigo-600 z-[1] h-[250px] w-[160%]'></div>
+                            <div className='animation-about-horz absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] bg-gradient-to-r from-indigo-600 to-blue-600 z-[1] h-[250px] w-[160%]'></div>
                             <img
                                 src="https://i.pinimg.com/736x/cf/bc/62/cfbc6290a8c664fc99290d458acc3e1c.jpg"
                                 alt="About"
-                                className="w-full h-full object-cover"
+                                className="relative z-[2] w-full h-full rounded-full object-cover p-[3px]"
                             />
                         </div>
                     </div>
@@ -37,7 +39,7 @@ function About() {
                             href="#"
                             className="CV inline-flex items-center overflow-hidden bg-indigo-600 after:bg-indigo-100 py-3 px-7 rounded-lg text-indigo-50 hover:shadow-lg hover:shadow-indigo-500 font-medium transition-colors duration-300"
                         >
-                            Unduh CV
+                            <span className='relative z-[3]'>Unduh CV</span>
                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                             </svg>

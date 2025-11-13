@@ -10,7 +10,7 @@ function Navbar() {
 
         {/* Menu Desktop */}
         <nav className="hidden md:flex space-x-8">
-          {["home", "about", "projects", "contact"].map((item) => (
+          {["home", "about", "projects", "services", "contact"].map((item) => (
             <a
               key={item}
               href={`#${item}`}
