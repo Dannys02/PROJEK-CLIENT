@@ -1,6 +1,24 @@
 import React from "react";
 
 function Footer() {
+    const icons = [
+        {
+            icon: "fa-brands fa-linkedin",
+            link: "#"
+        },
+        {
+            icon: "fa-brands fa-github",
+            link: "#"
+        },
+        {
+            icon: "fa-brands fa-instagram",
+            link: "#"
+        },
+        {
+            icon: "fa-brands fa-tiktok",
+            link: "#"
+        }
+    ];
     return (
         <footer className="bg-gray-800 text-white py-8">
             <div className="container mx-auto px-4 text-center mb-6 flex flex-col gap-5 justify-between items-start md:flex-row">
@@ -18,7 +36,13 @@ function Footer() {
                         Link cepat
                     </h2>
                     <div className="flex flex-col items-start gap-2">
-                        {["home", "about", "projects", "services", "contact"].map(item => (
+                        {[
+                            "home",
+                            "about",
+                            "projects",
+                            "services",
+                            "contact"
+                        ].map(item => (
                             <a
                                 key={item}
                                 href={`#${item}`}
@@ -33,18 +57,16 @@ function Footer() {
                     <h2 className="footer-title text-2xl font-bold text-indigo-400 mb-4 after:bg-indigo-800">
                         Sosial media
                     </h2>
-                    <div className="flex justify-center gap-4">
-                        {[
-                            <i class='fa-brands fa-linkedin px-1 text-xl'></i>,
-                            <i class='fa-brands fa-github px-1 text-xl'></i>,
-                            <i class='fa-brands fa-instagram px-1 text-xl'></i>
-                        ].map(icon => (
+                    <div className="flex gap-5">
+                        {icons.map((item, index) => (
                             <a
-                                key={icon}
-                                href={"#${icon}"}
-                                className="w-fit relative bg-indigo-800 p-1 rounded-xl capitalize text-indigo-50 hover:bg-indigo-600 transition-colors duration-300 after:bg-indigo-600"
+                                key={index}
+                                href={item.link}
+                                className="relative bg-transparent rounded-md text-indigo-50"
                             >
-                                {icon}
+                                <i
+                                    className={`${item.icon} text-2xl transition-colors duration-300 hover:text-indigo-500`}
+                                ></i>
                             </a>
                         ))}
                     </div>

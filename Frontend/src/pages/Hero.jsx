@@ -4,7 +4,7 @@ const PortfolioHome = () => {
 
     return (
         <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-indigo-50 to-white">
-            <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
+            <div className="container mx-auto px-4 flex flex-col-reverse gap-10 md:flex-row items-center">
                 <div className="md:w-1/2 mb-10 md:mb-0">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                         Hi, I'm <span className="text-indigo-600">Dannys Martha F</span>
@@ -25,7 +25,7 @@ const PortfolioHome = () => {
                         </a>
                         <a
                             href="#contact"
-                            className="hubungiSaya relative z-[2] overflow-hidden border border-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 hover:text-white transition-colors after:z-[0] duration-300 after:bg-indigo-600"
+                            className="hubungiSaya relative z-[2] overflow-hidden shadow-sm hover:shadow-none shadow-indigo-600 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-indigo-50 hover:text-white transition-all after:z-[0] duration-500 after:bg-indigo-600"
                         >
                             <span className="relative z-[3]">Hubungi Saya</span>
                         </a>

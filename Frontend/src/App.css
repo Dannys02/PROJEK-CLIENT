@@ -1,0 +1,26 @@
+.rotatesLoad {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.logoS {
+  animation: zoom 2s infinite ease-in-out;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

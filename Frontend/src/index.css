@@ -4,10 +4,13 @@
     scroll-behavior: smooth;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .header {
     background: rgb(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    border-bottom: 2px #999 solid;
+    backdrop-filter: blur(10px);
 }
 
 .navbar-a {
@@ -49,12 +52,7 @@
 }
 
 .animation-about-vert {
-    animation: rotate-vert 3s linear infinite;
-}
-
-.animation-about-horz {
-    transform: translate(-50%, -50%) rotate(90deg);
-    animation: rotate-horz 3s linear infinite;
+    animation: rotate-vert 5s linear infinite;
 }
 
 @keyframes rotate-vert {
@@ -65,43 +63,6 @@
     to {
         transform: translate(-50%, -50%) rotate(360deg);
     }
-}
-
-@keyframes rotate-horz {
-    from {
-        transform: translate(-50%, -50%) rotate(90deg);
-    }
-
-    to {
-        transform: translate(-50%, -50%) rotate(-450deg);
-    }
-}
-
-.CV {
-    position: relative;
-    transition: box-shadow 0.5s, transform 0.5s;
-}
-
-.CV::after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: -50%;
-    height: 20px;
-    width: 160%;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-.CV:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-.CV:hover {
-    transform: translateY(-5px);
 }
 
 .gambara:hover {
